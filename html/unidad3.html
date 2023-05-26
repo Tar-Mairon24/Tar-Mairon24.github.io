@@ -1,12 +1,338 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unidad 3</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Unidad1</title>
+        <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="../css/estilosUnidad.css">
+    </head>
 <body>
+    <header class="hero" id="inicio">
+        <nav class="nav container">
+            <div class="nav_logo">
+                <h2 class="nav_title">Arquitectura de Computadoras</h2>
+            </div>
+            <ul class="nav__link nav__link--menu">
+                <li class="nav__items">
+                    <a href="/index.html" class="nav__links">Inicio</a>
+                </li>
+                <li class="nav__items">
+                    <a href="/index.html" class="nav__links">Unidades</a>
+                </li>
+                <li class="nav__items">
+                    <a href="/index.html" class="nav__links">Practicas</a>
+                </li>
+                <li class="nav__items">
+                    <a href="#social" class="nav__links">Contacto</a>
+                </li>
+
+                <img src="/images/close.svg" alt="Cerrar" class="nav__close">
+            </ul>
+
+            <div class="nav__menu">
+                <img src="/images/menu.svg" alt="menu" class="nav__img">
+            </div>
+        </nav>
+        <section class="hero__container container">
+            <h1 class="hero__title">Unidad 1</h1>
+            <p class="hero__paragraph">
+                Arquitecturas de computo
+            </p>
+        </section>
+    </header>
+
+    <main>
+        <p><span class="temario" id="changeUnidad3">&nbsp;</span></p>
+        <h2>Seleccion de computadoras para ensamble de equipo de computo</h2>
+        <div id="unidad3-tabs">
+            <ul class="mainIndex">
+                <li><a href="#chipSet">Chip Set</a></li>
+                <li><a href="#aplicaciones">Aplicaciones</a></li>
+                <li><a href="#ambientesServicios">Ambientes de servicio</a></li>
+            </ul>
+            <div id="chipSet">
+                <h3>Chipset</h3>
+                <p class="content">
+                        Un chipset, también conocido como conjunto de chips, es un conjunto de circuitos integrados diseñados para funcionar juntos como una unidad para realizar varias funciones en un dispositivo electrónico, como una computadora, un teléfono inteligente o una tablet. El chipset actúa como el cerebro del sistema, coordinando y controlando las operaciones de los diferentes componentes de hardware.
+                        El chipset está compuesto por varios chips individuales que desempeñan funciones específicas y se conectan entre sí a través de buses de datos. Estos chips pueden incluir un chip de procesamiento central (CPU), un chip de procesamiento de gráficos (GPU), un chip de control de memoria, un chip de control de E/S (entrada/salida), un chip de control de audio, entre otros. Cada chip se encarga de gestionar una tarea particular y trabajar en conjunto para garantizar el funcionamiento adecuado del sistema.
+                        El chipset juega un papel fundamental en el rendimiento y las capacidades de un dispositivo. Determina la compatibilidad con ciertos componentes, como tarjetas gráficas, módulos de memoria y dispositivos de almacenamiento. También influye en la velocidad de procesamiento, la calidad de los gráficos, el soporte de conectividad (como Wi-Fi y Bluetooth), los puertos de E/S disponibles y otras características específicas del dispositivo.
+                        En resumen, un chipset es un conjunto de chips interconectados que funcionan juntos para controlar y gestionar las operaciones de un dispositivo electrónico. Es esencial para el rendimiento y la funcionalidad del dispositivo, ya que coordina y controla las funciones de los diferentes componentes de hardware.
+                </p>
+                <div id="chipsetTab">
+                    <ul class="indexBigger red" id="bigIndex">
+                        <li><a href="#CPU">Unidad central de procesamiento</a></li>
+                        <li><a href="#ControlBus">Controlador del Bus</a></li>
+                        <li><a href="#puertasES">Puertas de entrada salida e/s</a></li>
+                        <li><a href="#controlInt">Controlador de interrupciones</a></li>
+                        <li><a href="#controlADAM">Controlador de Acceso Directo a Memoria</a></li>
+                        <li><a href="#circuitoTemp">Circuitos de temporizacion</a></li>
+                        <li><a href="#circuitoControl">Circuitos de control</a></li>
+                        <li><a href="#controlVideo">Controladores de video</a></li>
+                    </ul>
+                    <div id="CPU">
+                        <p class="content">La CPU es uno de los componentes clave de una computadora o dispositivo electrónico y se considera el cerebro del sistema.
+                        La CPU es responsable de ejecutar las instrucciones y realizar los cálculos necesarios para el funcionamiento del dispositivo. Es el componente encargado de procesar y realizar operaciones lógicas, aritméticas y de control. Actúa como el núcleo del sistema, supervisando y coordinando todas las tareas y operaciones del hardware y el software.
+                        <br> La cpu cuenta de varias partes esenciales</p>
+                        <ul class="listContent">
+                          <li><b>Unidad de Control (Control Unit):</b> Es responsable de la gestión y coordinación de todas las operaciones dentro de la CPU. Controla la secuencia de ejecución de las instrucciones y coordina la comunicación entre la memoria, la unidad de almacenamiento y otros dispositivos.</li>
+                          <li><b>Unidad Aritmético-Lógica (Arithmetic Logic Unit, ALU):</b> Realiza operaciones matemáticas y lógicas, como sumas, restas, multiplicaciones, comparaciones y operaciones booleanas. Es donde se llevan a cabo los cálculos y las operaciones básicas.</li>
+                          <li><b>Registros:</b> Son pequeñas unidades de almacenamiento de alta velocidad que almacenan datos temporales y resultados intermedios durante la ejecución de las instrucciones. Los registros son fundamentales para el rendimiento de la CPU, ya que permiten un acceso rápido a los datos necesarios para las operaciones.</li>
+                        </ul>
+                        <img src="media/imgs/cpu.webp" alt="" class="contentImgs">
+                        <p class="content">
+                        La CPU interactúa con otros componentes del sistema, como la memoria RAM, los dispositivos de almacenamiento, los periféricos y otros, para realizar las tareas solicitadas por el usuario. Es responsable de la ejecución de programas, el manejo de instrucciones, la gestión de la memoria y el control de los dispositivos de entrada y salida.
+                        </p>
+                    </div>
+                    <div id="ControlBus">
+                        <p class="content">
+                        El controlador del bus, también conocido como controlador de bus de sistema, es un componente clave en una computadora que se encarga de coordinar y controlar el flujo de datos entre los diferentes dispositivos conectados al bus del sistema.
+                        El bus del sistema es una estructura de comunicación interna que permite la transferencia de datos, direcciones y señales de control entre la CPU, la memoria y otros componentes del sistema, como tarjetas de expansión y dispositivos de almacenamiento.
+                        El controlador del bus actúa como un intermediario entre la CPU y los dispositivos conectados al bus del sistema
+                        </p>
+                        <img src="media/imgs/controladorBus.jpg" alt="" class="contentImgs">
+                    </div>
+                    <div id="puertasES">
+                        <p class="content">Las puertas de entrada/salida (I/O, por sus siglas en inglés) se refieren a los circuitos electrónicos que permiten la comunicación y transferencia de datos entre un sistema informático y los dispositivos periféricos conectados a él. Estas puertas actúan como interfaz entre el sistema y el mundo exterior, permitiendo la entrada y salida de datos, así como el control de dispositivos externos.
+                        Las puertas de entrada/salida se utilizan para conectar y controlar una amplia variedad de dispositivos periféricos, como teclados, ratones, monitores, impresoras, unidades de almacenamiento externas, tarjetas de red, dispositivos USB, entre otros. Proporcionan los medios para enviar y recibir datos, señales de control y alimentación eléctrica hacia y desde estos dispositivos.
+                        Existen diferentes tipos de puertas de entrada/salida, que pueden variar según el tipo de interfaz y la tecnología utilizada.
+                        <br> Algunos ejemplos son: </p>
+                        <ul class="listContent">
+                          <li><b>Puertos seriales:</b> Proporcionan una interfaz de comunicación serial, donde los datos se transmiten uno a uno en secuencia. Ejemplos comunes incluyen puertos RS-232 y puertos USB.</li>
+                          <li><b>Puertos paralelos:</b> Permiten la transmisión simultánea de múltiples bits de datos a través de varios cables. El puerto paralelo más conocido es el puerto de impresora (LPT), que se utiliza para conectar impresoras y otros dispositivos paralelos.</li>
+                          <li><b>Interfaces de red:</b> Permiten la conexión y comunicación con redes de área local (LAN) o redes de área amplia (WAN). Ejemplos comunes incluyen puertos Ethernet y puertos inalámbricos.</li>
+                          <li><b>Puertos de audio y video:</b> Se utilizan para conectar altavoces, micrófonos, auriculares, monitores, televisores y otros dispositivos de audio y video. Ejemplos comunes son los puertos de audio de 3,5 mm, los puertos HDMI y los puertos DisplayPort.</li>
+                        </ul>
+                        <div class="imgWithText">
+                            <img src="media/imgs/entradasalida.jpg" alt="" class="contentImgs">
+                            <p class="content">Puertas de entrada/salida en una mb</p>
+                        </div>
+                        <p class="content">
+                        Además de proporcionar conexiones físicas, las puertas de entrada/salida también implican controladores y software específicos para gestionar la comunicación y las operaciones con los dispositivos periféricos. Estos controladores permiten la detección, configuración y manejo adecuado de los dispositivos conectados, asegurando una interacción fluida entre el sistema y los periféricos.
+                        </p>
+                    </div>
+                    <div id="controlInt">
+                        <p class="content">
+                        El controlador de interrupciones es un componente del hardware de una computadora o sistema informático que se encarga de gestionar y controlar las interrupciones generadas por los dispositivos periféricos o por eventos específicos del sistema.
+                        Una interrupción es una señal enviada por un dispositivo o evento que requiere atención inmediata por parte del sistema. Puede ocurrir cuando un dispositivo periférico necesita enviar o recibir datos, cuando se produce un error en el hardware, cuando se solicita una operación específica, entre otras situaciones. Cuando se genera una interrupción, el controlador de interrupciones se activa y toma el control del procesador central (CPU) para atender la solicitud o evento que la generó.
+                        La función principal del controlador de interrupciones es gestionar y priorizar las interrupciones según su nivel de prioridad. Cada interrupción se asigna a un nivel de prioridad específico, y el controlador de interrupciones se encarga de determinar cuál debe ser atendida en primer lugar. Esto se hace mediante un esquema de prioridad establecido por el sistema, donde las interrupciones más críticas o urgentes se atienden antes que las de menor prioridad.<br>
+                        Cuando se recibe una interrupción, el controlador de interrupciones puede llevar a cabo las siguientes acciones:
+                        </p>
+                        <ul class="listContent">
+                         <li><b>Identificación:</b> El controlador de interrupciones identifica la fuente de la interrupción, es decir, qué dispositivo o evento la generó. Cada dispositivo periférico está asociado a un número o identificador de interrupción único.</li>
+                          <li><b>Enmascaramiento:</b> El controlador de interrupciones puede tener la capacidad de enmascarar o habilitar/deshabilitar determinadas interrupciones. Esto permite controlar qué dispositivos periféricos pueden generar interrupciones y cuáles están temporalmente desactivados.</li>
+                          <li><b>Priorización:</b> El controlador de interrupciones establece la prioridad de las interrupciones y decide cuál será atendida primero según su nivel de importancia.</li>
+                          <li><b>Gestión de rutinas de interrupción:</b> Una vez que se ha identificado y priorizado una interrupción, el controlador de interrupciones puede ejecutar una rutina de interrupción específica asociada a esa interrupción en particular. Esta rutina maneja la acción requerida para atender la solicitud del dispositivo o evento que generó la interrupción.</li>
+                        </ul>
+                    </div>
+                    <div id="controlADAM">
+                    <p class="content">
+                        El control de acceso directo a memoria (Direct Memory Access, DMA) es una técnica utilizada en sistemas informáticos para permitir que ciertos dispositivos periféricos accedan a la memoria del sistema de forma directa, sin necesidad de la intervención de la CPU.
+                        Cuando un dispositivo periférico necesita transferir datos hacia o desde la memoria del sistema, normalmente se requiere la participación de la CPU para coordinar y llevar a cabo la transferencia. Sin embargo, en situaciones en las que se requiere una alta velocidad de transferencia de datos o una descarga de la carga de trabajo de la CPU, se utiliza el control de acceso directo a memoria.
+                        El DMA permite que el dispositivo periférico tome el control temporal de la comunicación con la memoria y realice la transferencia directamente. La CPU configura el DMA proporcionando información sobre la ubicación de los datos en la memoria y el tamaño de la transferencia. Luego, el dispositivo periférico accede a la memoria directamente a través del bus del sistema, transfiere los datos y finaliza la operación.
+                        <br> El control de acceso directo a memoria ofrece varias ventajas, incluyendo:
+                    </p>
+                    <ul class="listContent">
+                         <li><b>Mejor rendimiento:</b> Al permitir que los dispositivos periféricos accedan directamente a la memoria, se reduce la carga de trabajo de la CPU y se mejora el rendimiento general del sistema. Esto es especialmente útil en transferencias de datos grandes y rápidas, como las realizadas por tarjetas de red de alta velocidad o controladoras de disco.</li>
+                          <li><b>Menor latencia:</b> Al eliminar la necesidad de que la CPU participe en cada transferencia de datos, se reduce la latencia en el procesamiento de las operaciones de entrada/salida. Esto resulta en una comunicación más rápida y eficiente entre los dispositivos periféricos y la memoria.</li>
+                          <li><b>Mayor flexibilidad:</b> El control de acceso directo a memoria permite que los dispositivos periféricos realicen transferencias de datos en segundo plano mientras la CPU se ocupa de otras tareas. Esto permite una mayor flexibilidad en el uso de los recursos del sistema y facilita la ejecución simultánea de múltiples operaciones.</li>
+                    </ul>
+                    <p class="content">A pesar de sus beneficios, el control de acceso directo a memoria debe ser utilizado con precaución, ya que los dispositivos periféricos pueden acceder a la memoria sin la supervisión directa de la CPU. Es importante garantizar que se implementen mecanismos de seguridad adecuados para proteger la integridad de los datos y prevenir accesos no autorizados a la memoria del sistema.</p>
+                    </div>
+                    <div id="circuitoTemp">
+                        <p class="content">
+                            Los circuitos de temporización, también conocidos como circuitos temporizadores o circuitos de reloj, son componentes electrónicos que generan señales de temporización para controlar el tiempo en diversos dispositivos y sistemas.
+                            Estos circuitos están diseñados para producir señales de salida con una duración o frecuencia específica, que se utilizan para sincronizar y coordinar diferentes partes de un sistema electrónico. Pueden ser utilizados en una amplia gama de aplicaciones, desde sistemas de control automatizados hasta dispositivos de medición y comunicaciones.<br>
+                            Existen diferentes tipos de circuitos de temporización, algunos de los más comunes son:
+                        </p>
+                        <ul class="listContent">
+                            <li><b>Osciladores:</b> Son circuitos que generan una señal periódica continua, como una onda sinusoidal, cuadrada o de pulso. Estas señales se utilizan para marcar el ritmo del sistema y pueden ajustarse para producir diferentes frecuencias.</li>
+                          <li><b>Contadores:</b> Son circuitos que generan una secuencia de pulsos o señales de salida en función de un contador interno. Estos circuitos pueden contar impulsos de reloj o ciclos de señal para generar salidas sincronizadas.</li>
+                          <li><b>Temporizadores:</b> Son circuitos que generan una señal de salida con una duración específica o que producen una señal de salida después de un período de tiempo determinado. Se utilizan en aplicaciones que requieren retrasos o intervalos de tiempo precisos.</li>
+                          <li><b>Divisores de frecuencia:</b> Son circuitos que dividen la frecuencia de la señal de entrada en una frecuencia más baja. Estos circuitos se utilizan para obtener frecuencias de salida más bajas en relación con una señal de entrada y se pueden combinar con otros componentes para lograr una temporización precisa.</li>
+                        </ul>
+                    </div>
+                    <div id="circuitoControl">
+                        <p class="content">
+                            Un circuito de control es un componente o conjunto de componentes electrónicos diseñados para regular y supervisar el funcionamiento de un sistema o dispositivo. Su función principal es recibir señales de entrada, procesarlas y generar las señales de salida necesarias para controlar diferentes aspectos del sistema.
+                            Los circuitos de control se utilizan en una amplia variedad de aplicaciones, desde sistemas automatizados hasta dispositivos electrónicos de uso cotidiano. Algunos ejemplos comunes de circuitos de control incluyen controladores de temperatura, controladores de velocidad de motores, controladores de iluminación y controladores de sistemas de seguridad.
+                            Estos circuitos suelen incluir componentes como sensores, que detectan las condiciones del sistema, y actuadores, que realizan las acciones necesarias para controlar el sistema. También pueden incorporar circuitos de lógica, microcontroladores o circuitos integrados especializados para realizar el procesamiento y la toma de decisiones. <br>
+                            El funcionamiento de un circuito de control generalmente sigue el siguiente proceso:
+                        </p>
+                        <ol class="listContent">
+                             <li><b>Recepción de señales de entrada:</b> El circuito recibe información o señales de entrada provenientes de sensores u otros dispositivos. Estas señales representan las condiciones actuales del sistema que se está controlando.</li>
+                              <li><b>Procesamiento de la información:</b> Las señales de entrada son procesadas por el circuito de control, donde se aplican algoritmos, lógica o cálculos para determinar las acciones requeridas.</li>
+                              <li><b>Generación de señales de salida:</b> Basado en el procesamiento de las señales de entrada, el circuito de control genera señales de salida adecuadas para controlar los actuadores del sistema. Estas señales de salida pueden ser voltajes, corrientes, señales digitales u otros tipos de señales dependiendo de los requerimientos del sistema.</li>
+                              <li><b>Control del sistema:</b> Las señales de salida son enviadas a los actuadores, que son responsables de realizar las acciones físicas necesarias para controlar el sistema. Estas acciones pueden incluir encender o apagar dispositivos, regular la velocidad o posición de un motor, ajustar la temperatura, entre otros.</li>
+                        </ol>
+                    </div>
+                    <div id="controlVideo">
+                        <p class="content">
+                            Los controladores de video, también conocidos como controladores de pantalla o controladores de gráficos, son componentes electrónicos o software que gestionan la generación y visualización de imágenes en un dispositivo de visualización, como un monitor, una pantalla de televisión o una pantalla integrada en un dispositivo móvil.
+                            Estos controladores son responsables de procesar la información gráfica generada por la CPU y convertirla en señales comprensibles para el dispositivo de visualización. <br>
+                            Sus funciones principales incluyen:
+                        </p>
+                        <ul class="listContent">
+                            <ul>
+                              <li><b>Interfaz con la CPU:</b> El controlador de video actúa como intermediario entre la CPU y el dispositivo de visualización. Recibe las instrucciones y datos gráficos de la CPU y los procesa para su representación en pantalla.</li>
+                              <li><b>Conversión de señales:</b> El controlador de video convierte las señales digitales generadas por la CPU en señales analógicas o digitales compatibles con el dispositivo de visualización. Esto implica la conversión de formatos de señal, la adaptación de la resolución y la frecuencia de actualización, entre otros parámetros.</li>
+                              <li><b>Renderizado de gráficos:</b> El controlador de video puede incluir capacidades de renderizado de gráficos, lo que implica la generación de imágenes a partir de instrucciones y datos proporcionados por la CPU. Esto puede incluir la manipulación de polígonos, texturas, iluminación y otros elementos para producir imágenes detalladas y realistas.</li>
+                              <li><b>Administración de memoria de video:</b> Los controladores de video suelen gestionar la memoria de video, que almacena los datos gráficos necesarios para la representación de las imágenes en pantalla. Esto incluye la asignación y liberación de memoria, así como la transferencia eficiente de datos entre la memoria de video y la memoria principal del sistema.</li>
+                              <li><b>Control de configuración:</b> Los controladores de video permiten ajustar diferentes parámetros de configuración relacionados con la visualización, como la resolución de pantalla, la relación de aspecto, la calibración del color, la frecuencia de actualización, entre otros. Estos ajustes se pueden realizar a través de configuraciones de software o mediante la configuración de hardware específica del controlador.</li>
+                        </ul>
+                        <div class="imgWithText">
+                            <img src="media/imgs/nvidiapanel.png" alt="" class="contentImgs">
+                            <p class="content">Panel de control de video de Nvidia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="aplicaciones">
+                <h3>Aplicaciones</h3>
+                <div id="tab-aplicaciones">
+                    <ul class="index red">
+                        <li><a href="#entrada/salida">Entrada/salida</a></li>
+                        <li><a href="#almacenamiento">Almacenamiento</a></li>
+                        <li><a href="#fuentesAlimentacion">Fuentes de alimentacion</a></li>
+                    </ul>
+                    <div id="entrada/salida">
+                        <p class="content">
+                                Las aplicaciones de entrada/salida (E/S) son variadas y abarcan una amplia gama de dispositivos y sistemas.<br> Algunos de los  ejemplos mas comunes de aplicaciones de E/S son:
+                            </p>
+                            <ul class="listContent">
+                                  <li>Dispositivos de entrada/salida de uso general: Incluyen teclados, ratones, escáneres, impresoras, cámaras digitales, micrófonos y altavoces. Estos dispositivos permiten la interacción del usuario con la computadora o sistema y la entrada y salida de información.</li>
+                                  <li>Dispositivos de almacenamiento externo: Los dispositivos como unidades de disco duro externas, unidades de estado sólido (SSD), unidades flash USB y tarjetas de memoria son utilizados para el almacenamiento y transferencia de datos entre sistemas. Estos dispositivos permiten la entrada y salida de grandes volúmenes de datos.</li>
+                                  <li>Dispositivos de red: Las tarjetas de red, adaptadores inalámbricos y módems son utilizados para la comunicación y conexión a redes locales (LAN) o redes de área amplia (WAN). Estos dispositivos permiten la entrada y salida de datos a través de redes, como la transferencia de archivos, navegación por Internet y comunicación en línea.</li>
+                                  <li>Dispositivos de control industrial: En entornos industriales, los dispositivos de E/S se utilizan para controlar y monitorear procesos y sistemas. Estos dispositivos pueden incluir sensores, actuadores, controladores de temperatura, controladores de velocidad y otros dispositivos especializados para la entrada y salida de señales en sistemas de automatización y control.</li>
+                                  <li>Dispositivos multimedia: Los dispositivos multimedia, como reproductores de DVD/Blu-ray, sistemas de sonido envolvente, televisores y proyectores, están diseñados para la entrada y salida de contenido multimedia, como películas, música y presentaciones.</li>
+                                  <li>Dispositivos de entrada/salida en sistemas embebidos: En sistemas embebidos, como dispositivos móviles, automóviles, electrodomésticos inteligentes y dispositivos médicos, los dispositivos de E/S se utilizan para interactuar con el usuario y controlar diferentes funciones del sistema.</li>
+                                  <li>Dispositivos de E/S especializados: También existen dispositivos de E/S especializados para aplicaciones específicas, como lectores de códigos de barras, sensores biométricos, dispositivos de realidad virtual y aumentada, dispositivos de captura de datos, entre otros.</li>
+                            </ul>
+                    </div>
+                    <div id="almacenamiento">
+                        <p class="content">
+                            Los dispositivos de almacenamiento, como los HDD (discos duros), SSD (unidades de estado sólido) y la memoria flash, se utilizan en una amplia variedad de aplicaciones tecnológicas.
+                            En el caso de los HDD, se utilizan en computadoras personales, portátiles y servidores para almacenar grandes volúmenes de datos a un costo relativamente bajo. Son ideales para el almacenamiento a largo plazo de archivos y programas. Los HDD utilizan discos magnéticos que giran a alta velocidad y cabezas de lectura/escritura para acceder a los datos almacenados en ellos.
+                            Por otro lado, los SSD han ganado popularidad debido a su mayor rendimiento en comparación con los HDD. Utilizan memoria flash para almacenar datos de forma sólida, sin partes móviles. Esto los hace más rápidos, resistentes y eficientes energéticamente. Los SSD se utilizan en computadoras personales, portátiles, servidores y dispositivos móviles para mejorar la velocidad de arranque, carga de aplicaciones y transferencia de datos.
+                            La memoria flash es otro tipo de dispositivo de almacenamiento utilizado en una variedad de aplicaciones. Se encuentra en unidades USB, tarjetas de memoria, teléfonos móviles y otros dispositivos portátiles. La memoria flash es no volátil, lo que significa que puede retener datos incluso cuando no hay alimentación eléctrica. Es adecuada para almacenar y transportar datos de manera rápida y segura.
+                        </p>
+                        <div class="doubleImg">
+                            <div class="imgWithText"><img src="media/imgs/ssd.jpg" alt="" class="contentImgs"><p class="content">Disco de estado solido (SSD)</p></div>
+                            <div class="imgWithText"><img src="media/imgs/hdd.webp" alt="" class="contentImgs"><p class="content">Disco duro magnetico (HDD)</p></div>
+                        </div>
+                    </div>
+                    <div id="fuentesAlimentacion">
+                        <p class="content">
+                            Una fuente de alimentación es un dispositivo electrónico que convierte la corriente eléctrica de la red de suministro en voltajes y corrientes estables y adecuados para alimentar otros dispositivos electrónicos. Proporciona la energía necesaria para el funcionamiento de componentes y sistemas, asegurando un suministro constante y confiable de energía eléctrica.<br>
+                            Las fuentes de alimentación tienen una amplia variedad de aplicaciones en diversos campos tecnológicos y de electrónica. <br>Algunas de las aplicaciones comunes de las fuentes de alimentación son las siguientes:
+                        </p>
+                        <ul class="listContent">
+                              <li><b>Computadoras y servidores:</b> Las fuentes de alimentación se utilizan en computadoras de escritorio, portátiles y servidores para suministrar energía a todos los componentes internos. Proporcionan los voltajes necesarios para alimentar la placa base, los discos duros, las tarjetas de expansión, los ventiladores y otros periféricos.</li>
+                              <li><b>Electrónica de consumo:</b> Las fuentes de alimentación se utilizan en una amplia gama de dispositivos electrónicos de consumo, como televisores, reproductores de DVD/Blu-ray, consolas de juegos, sistemas de sonido y electrodomésticos. Estas fuentes de alimentación se encargan de convertir la corriente eléctrica de la toma de corriente en los voltajes adecuados para cada componente del dispositivo.</li>
+                              <li><b>Telecomunicaciones:</b> En el campo de las telecomunicaciones, las fuentes de alimentación se utilizan para suministrar energía a equipos de redes, como enrutadores, conmutadores, equipos de telefonía y estaciones base de comunicaciones móviles. Garantizan un suministro de energía constante y confiable para el funcionamiento adecuado de estos dispositivos.</li>
+                              <li><b>Sistemas de control industrial:</b> En entornos industriales, las fuentes de alimentación se utilizan en sistemas de control y automatización. Suministran energía a PLC (Controladores Lógicos Programables), motores, sensores, actuadores y otros componentes utilizados en la automatización de procesos industriales.</li>
+                              <li><b>Sistemas de energía renovable:</b> En sistemas de energía renovable, como paneles solares y turbinas eólicas, las fuentes de alimentación se utilizan para convertir la energía generada por estas fuentes renovables en una forma de corriente continua o alterna utilizable.</li>
+                              <li><b>Equipos médicos:</b> Las fuentes de alimentación también tienen aplicaciones en el campo médico, donde se utilizan en equipos y dispositivos médicos, como monitores de pacientes, equipos de diagnóstico, sistemas de resonancia magnética y equipos de terapia.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="ambientesServicios">
+                <h3>Ambientes de servicio</h3>
+                <p class="content">
+                    Los ambientes de servicio se refieren a los entornos en los que se implementan y utilizan servicios informáticos. Estos ambientes pueden variar dependiendo de las necesidades y características de los servicios que se ofrecen.
+                </p>
+                <div id="ambientesIndex">
+                    <ul class="index red">
+                        <li><a href="#negocios">Negocios</a></li>
+                        <li><a href="#industria">Industria</a></li>
+                        <li><a href="#ecommerce">Comercio electronico</a></li>
+                    </ul>
+                    <div id="negocios">
+                        <p class="content">
+                            En el contexto de la arquitectura de computadoras, los ambientes de servicios se refieren a los sistemas y componentes que se utilizan para brindar servicios a los usuarios y gestionar las operaciones de los sistemas informáticos. Estos ambientes están diseñados para garantizar un rendimiento eficiente, confiable y seguro de los servicios ofrecidos. <br>Algunos aspectos relacionados con la arquitectura de computadoras en los ambientes de servicios son:
+                        </p>
+                        <ul class="listContent">
+                                <li><b>Servidores:</b> En los ambientes de servicios, los servidores desempeñan un papel fundamental. Estos son computadoras de alta capacidad y potencia de procesamiento que se utilizan para almacenar y gestionar los datos, ejecutar aplicaciones y ofrecer servicios a los usuarios. Los servidores pueden estar dedicados a funciones específicas, como servidores web, servidores de bases de datos o servidores de aplicaciones.</li>
+                                <li><b>Redes de comunicación:</b> Las redes de comunicación son esenciales para conectar los diferentes componentes de un ambiente de servicios y permitir la transferencia de datos y la comunicación entre los sistemas. La arquitectura de red incluye dispositivos como routers, switches, hubs y cables que facilitan la transmisión de datos y aseguran la conectividad entre los diferentes componentes de la infraestructura.</li>
+                                <li><b>Sistemas de almacenamiento:</b> En los ambientes de servicios, es necesario contar con sistemas de almacenamiento que permitan la gestión y el acceso eficiente a los datos. Estos sistemas pueden incluir unidades de disco duro (HDD), unidades de estado sólido (SSD), sistemas de almacenamiento en red (NAS) o sistemas de almacenamiento en la nube. La arquitectura de almacenamiento se encarga de organizar y gestionar los datos de manera segura y eficiente.</li>
+                                <li><b>Virtualización:</b> La virtualización es una técnica ampliamente utilizada en los ambientes de servicios para optimizar el uso de los recursos de hardware y simplificar la gestión de los sistemas. Mediante la virtualización, es posible crear múltiples instancias virtuales de sistemas operativos, aplicaciones y servicios en un solo servidor físico. Esto permite una mayor flexibilidad, escalabilidad y eficiencia en la gestión de los servicios.</li>
+                                <li><b>Seguridad:</b> En los ambientes de servicios, la seguridad de los datos y la protección contra amenazas externas son aspectos críticos. La arquitectura de seguridad incluye medidas como firewalls, sistemas de detección de intrusiones, cifrado de datos y autenticación para garantizar la integridad y confidencialidad de los servicios y la información de los usuarios.</li>
+                                <li><b>Gestión de carga y equilibrio de carga:</b> En entornos de servicios con alta demanda, es necesario gestionar la carga de trabajo de manera eficiente para garantizar un rendimiento óptimo. La arquitectura de gestión de carga y equilibrio de carga se encarga de distribuir la carga de trabajo entre los servidores disponibles de manera equitativa, evitando la sobrecarga de recursos y asegurando un rendimiento eficiente de los servicios.</li>
+                        </ul>
+                        <div class="imgWithText">
+                            <img src="media/imgs/servidor.jpg" alt="" class="contentImgs">
+                            <p class="content">Servidor</p>
+                        </div>
+                    </div>
+                    <div id="industria">
+                        <p class="content">
+                            En la industria, los ambientes de servicio basados en la arquitectura de computadoras desempeñan un papel crucial en el control, la supervisión y la gestión de los procesos industriales. Estos ambientes están diseñados para proporcionar una infraestructura de computación confiable y eficiente que permita el funcionamiento óptimo de los sistemas industriales.
+                            <br>Algunos aspectos clave de los ambientes de servicio en la industria basados en la arquitectura de computadoras incluyen:
+                        </p>
+                        <ul class="listContent">
+                              <li><b>Sistemas de control y supervisión:</b> Los sistemas de control y supervisión se utilizan para monitorear y controlar los procesos industriales en tiempo real.</li>
+                                <li><b>Redes industriales:</b> Las redes industriales proporcionan la infraestructura de comunicación necesaria para conectar y coordinar los dispositivos y sistemas en el entorno industrial.</li>
+                                <li><b>Sistemas de adquisición de datos:</b> Los sistemas de adquisición de datos recopilan información de sensores y dispositivos en tiempo real y la convierten en datos digitales que se pueden utilizar para el control y la toma de decisiones.</li>
+                                <li><b>Servidores y almacenamiento:</b> Los servidores y sistemas de almacenamiento desempeñan un papel fundamental en los ambientes de servicio en la industria.</li>
+                                <li><b>Seguridad y protección:</b> La seguridad es un aspecto crítico en los ambientes de servicio en la industria.</li>
+                                <li><b>Gestión y supervisión de sistemas:</b> Los ambientes de servicio en la industria requieren de herramientas de gestión y supervisión para monitorear y administrar eficientemente los sistemas y recursos.</li>
+                        </ul>
+                        <img src="media/imgs/redes.jpg" alt="" class="contentImg">
+                    </div>
+                    <div id="ecommerce">
+                        <p class="content">
+                            En el contexto del comercio electrónico (e-commerce), los ambientes de servicio se refieren a la infraestructura tecnológica necesaria para respaldar y gestionar las operaciones de una tienda en línea. La arquitectura de computadoras en este entorno se centra en proporcionar una plataforma confiable, escalable y segura para facilitar el comercio electrónico.<br> Algunos aspectos clave de los ambientes de servicio en e-commerce basados en la arquitectura de computadoras incluyen:
+                        </p>
+                        <ul class="listContent">
+                             <li><b>Servidores web:</b> Los servidores web son la columna vertebral de una tienda en línea. Se encargan de gestionar las solicitudes de los clientes, procesar transacciones, almacenar y recuperar datos, y ofrecer una interfaz para que los usuarios naveguen por los productos y realicen compras.</li>
+                              <li><b>Base de datos:</b> Una base de datos robusta y eficiente es esencial para el almacenamiento y la gestión de información crítica en un entorno de e-commerce. La base de datos almacena datos de productos, información de clientes, historial de pedidos y otra información relevante para el negocio.</li>
+                              <li><b>Seguridad:</b> Dado que el e-commerce implica la transferencia de datos sensibles, la seguridad es de vital importancia. La arquitectura de computadoras en los ambientes de servicio en e-commerce incluye medidas de seguridad como certificados SSL/TLS para cifrar las comunicaciones, cortafuegos (firewalls) para proteger contra ataques externos y sistemas de detección de intrusos para salvaguardar la integridad de los datos.</li>
+                              <li><b>Almacenamiento y recuperación de datos:</b> Los ambientes de servicio en e-commerce requieren sistemas de almacenamiento eficientes y escalables para manejar grandes volúmenes de datos. Esto puede incluir sistemas de almacenamiento en la nube, bases de datos distribuidas o almacenamiento en caché para mejorar el rendimiento de las consultas de datos.</li>
+                              <li><b>Gestión de contenido:</b> En un entorno de e-commerce, la gestión de contenido es crucial para administrar la información de productos, imágenes, descripciones y otras características relevantes. La arquitectura de computadoras debe incluir sistemas que permitan la creación, edición y publicación de contenido de manera eficiente.</li>
+                              <li><b>Servicios de pago y transacciones:</b> Los ambientes de servicio en e-commerce deben contar con sistemas de procesamiento de pagos seguros y confiables. Esto implica la integración de pasarelas de pago, sistemas de procesamiento de tarjetas de crédito u otros métodos de pago en línea.</li>
+                        </ul>
+                        <img src="media/imgs/ecommerce.jpg" alt="" class="contentImgs">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <section class="footer__container container">
+            <nav class="nav nav--footer">
+                <h2 class="footer__title">Arquitectura de Computadoras</h2>
+
+                <ul class="nav__link nav__link--footer">
+                    <li class="nav__items">
+                        <a href="#inicio" class="nav__links">Inicio</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#social" class="nav__links">Contacto</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#unidades" class="nav__links">Unidades</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#practica" class="nav__links">Practicas</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        <section class="footer__copy container">
+            <div class="footer__social" id="social">
+                <a href="https://github.com/Tar-Mairon24" class="footer__icons"><img src="../images/github.svg" alt="github" class="footer_img"></a>
+                <a href="https://twitter.com/IrigoyenMario24" class="footer__icons"><img src="../images/twitter.svg" alt="twitter" class="footer_img"></a>
+                <a href="https://wa.me/528444428728" class="footer__icons"><img src="../images/whatsapp.svg" alt="whatsapp" class="footer_img"></a>
+            </div>
+
+            <h3 class="footer__copyright">Derechos Reservados &copy; Mario Irigoyen Estrada</h3>
+        </section>
+    </footer>
+
+    <script src="js/menu.js"></script>
     
 </body>
 </html>
