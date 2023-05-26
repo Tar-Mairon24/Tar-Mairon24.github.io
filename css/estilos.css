@@ -9,6 +9,7 @@
 body{
     font-family: 'Roboto', sans-serif;
     background-color: #D6D0CF;
+    margin: 0;
 }
 
 .container{
@@ -223,7 +224,7 @@ body{
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #fff;
-    padding-bottom: 60px;
+    padding-bottom: 10px;
 }
 
 .nav--footer{
@@ -242,7 +243,7 @@ body{
 }
 
 .footer__copy{
-    --pading-container: 30px 0;
+    --pading-container: 10px 0;
     text-align: center;
     color: #fff;
 }
@@ -275,7 +276,7 @@ body{
 
     .nav__link--menu{
         position: fixed;
-        background-color: black;
+        background-color: rgb(126, 119, 119);
         top: 0;
         left: 0;
         height: 100%;

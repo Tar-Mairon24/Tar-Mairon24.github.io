@@ -1,12 +1,185 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unidad 2</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Unidad1</title>
+        <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="../css/estilosUnidad.css">
+    </head>
+    <body>
+        <header class="hero" id="inicio">
+            <nav class="nav container">
+                <div class="nav_logo">
+                    <h2 class="nav_title">Arquitectura de Computadoras</h2>
+                </div>
+                <ul class="nav__link nav__link--menu">
+                    <li class="nav__items">
+                        <a href="/index.html" class="nav__links">Inicio</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="/index.html" class="nav__links">Unidades</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="/index.html" class="nav__links">Practicas</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#social" class="nav__links">Contacto</a>
+                    </li>
     
-</body>
+                    <img src="/images/close.svg" alt="Cerrar" class="nav__close">
+                </ul>
+    
+                <div class="nav__menu">
+                    <img src="/images/menu.svg" alt="menu" class="nav__img">
+                </div>
+            </nav>
+            <section class="hero__container container">
+                <h1 class="hero__title">Unidad 1</h1>
+                <p class="hero__paragraph">
+                    Arquitecturas de computo
+                </p>
+            </section>
+        </header>
+        
+        <main>
+            <p><span class="temario" id="changeUnidad2">&nbsp;</span></p>
+        <h2>Estructura y funcionamiento de la CPU</h2>
+        <div id="unidad2-tabs">
+            <ul class="mainIndex">
+                <li><a href="#organizacionProce">Organizacion del procesador</a></li>
+                <li><a href="#estructuraReg">Estructura de registros</a></li>
+                <li><a href="#cicloinstruccion">El ciclo de instruccion</a></li>
+                <li><a href="#sentToCpu">Casos de estudio de CPU</a></li>
+            </ul>
+            <div id="organizacionProce">
+                    <h3>Organizacion del procesador</h3>
+                    <p class="content">La organización del procesador se refiere a cómo está estructurado el procesador de una computadora. Está compuesto por una unidad de control (CU) y una unidad aritmético-lógica (ALU), que se encargan de controlar el flujo de datos y realizar operaciones aritméticas y lógicas, respectivamente. Además, el procesador puede tener otras unidades especializadas como una unidad de coma flotante (FPU) o una unidad de entrada/salida (IOU).
+                        En cuanto a la arquitectura de computadoras, existen varias arquitecturas de procesador comunes, incluyendo la arquitectura de conjunto de instrucciones reducido (RISC), la arquitectura de conjunto de instrucciones complejas (CISC) y la arquitectura de procesador superescalar. La arquitectura RISC se enfoca en la simplicidad y la eficiencia en la ejecución de instrucciones, mientras que la arquitectura CISC se enfoca en la facilidad de programación. La arquitectura superescalar permite que el procesador pueda ejecutar múltiples instrucciones simultáneamente y mejorar el rendimiento del sistema.
+                    </p>
+                    <div class="imgWithText">
+                        <img src="media/imgs/organizacionCpu.png" alt="" class="contentImgs">
+                        <p class="content">Diagrama de la organizacion de un cpu</p>
+                    </div>
+                </div>
+                <div id="estructuraReg">
+                    <h3>Estructura de registros</h3>
+                    <p class="content">La estructura de registros se refiere a la cantidad y el propósito de los registros utilizados en un procesador. Los registros son una forma de almacenamiento de datos de alta velocidad en la CPU de una computadora que se utilizan para almacenar datos temporalmente mientras se están procesando. Los registros pueden ser de propósito general (GPR) o de propósito específico (SPR), y pueden ser de usuario o de sistema. La cantidad y propósito de los registros varía según la arquitectura de procesador utilizada.</p>
+                    <div id="tab-estructuraReg">
+                        <ul class="bigger index red">
+                            <li><a href="#regvis">Registros visibles para el usuario</a></li>
+                            <li><a href="#regContr">Registros de control y estados</a></li>
+                            <li><a href="#ejempreg">Ejemplos de organizacion de registro de CPU reales</a></li>
+                        </ul>
+                        <div id="regvis">
+                            <h3>Registros visibles para el usuario</h3>
+                            <p class="content">
+                                Los registros visibles para el usuario son un conjunto de registros que pueden ser utilizados por un programa de usuario en un procesador. Estos registros son accesibles y utilizados directamente por los programas que se ejecutan en la CPU.
+                                El conjunto de registros visibles para el usuario varía según la arquitectura del procesador. Por ejemplo, en la arquitectura x86, los registros visibles para el usuario incluyen los registros de propósito general como EAX, EBX, ECX, EDX, EBP, ESP, ESI y EDI. Estos registros se utilizan para almacenar operandos y resultados de operaciones aritméticas y lógicas.
+                                Además de los registros de propósito general, algunas arquitecturas también tienen registros visibles para el usuario que se utilizan para otras tareas. Por ejemplo, la arquitectura x86 tiene registros de segmento que se utilizan para apuntar a diferentes partes de la memoria, como la pila o el código.
+                                El conjunto de registros visibles para el usuario también puede ser ampliado por medio de extensiones de arquitectura o modos de operación. Por ejemplo, en la arquitectura x86, el modo de operación protegido amplía el conjunto de registros visibles para el usuario con registros adicionales.
+                            </p>
+                        </div>
+                        <div id="regContr">
+                            <h3>Registros de control y estados</h3>
+                            <p class="content">
+                                Los registros de control y estados son un conjunto de registros utilizados por la unidad de control de la CPU para controlar y monitorear el funcionamiento del procesador. Estos registros no son visibles para el usuario y solo son utilizados por el hardware del sistema y el sistema operativo.
+                                <br> Algunos ejemplos de registros de control y estados son:
+                            </p>
+                            <ul class="listContent">
+                                <li><b>El registro de estado de flags (FLAGS) en la arquitectura x86:</b> contiene banderas que indican si se ha producido una condición aritmética, como la bandera de carry o la bandera de signo.</li>
+                                <li><b>El registro de estado del procesador (PSW) en la arquitectura IBM System/370:</b> contiene información sobre el modo de operación actual, el estado de interrupción y otros indicadores de estado.</li>
+                                <li><b>El registro de contador de programa (PC):</b> contiene la dirección de la siguiente instrucción a ejecutar.</li>
+                                <li><b>El registro de puntero de pila (SP):</b> apunta a la posición actual de la pila.</li>
+                            </ul>
+                            <div class="doubleImg">
+                                <div class="imgWithText"><img src="media/imgs/flags.jpg" alt="" class="contentImgs"><p class="content">Registro FLAGS</p></div>
+                                <div class="imgWithText"><img src="media/imgs/psw.png" alt="" class="contentImgs"><p class="content">Registro PSW</p></div>
+                                <div class="imgWithText"><img src="media/imgs/controladorPrograma.png" alt="" class="contentImgs"><p class="content">Registro PC</p></div>
+                                <div class="imgWithText"><img src="media/imgs/pila.png" alt="" class="contentImgs"><p class="content">Registro SP</p></div>
+                            </div>
+                        </div>
+                        <div id="ejempreg">
+                            <h3>Ejemplos de organizacion de registro de CPU reales</h3>
+                            <ul class="listContent">
+                                <li><b>Intel x86:</b> La arquitectura x86 de Intel tiene una organización de registros basada en acumuladores y registros de propósito general. Los registros de acumuladores son EAX, EBX, ECX y EDX, y se utilizan para operaciones aritméticas y lógicas. Los registros de propósito general incluyen EBP, ESP, ESI y EDI, que se utilizan para la gestión de la pila y la transferencia de datos.</li>
+                                <li><b>ARM:</b> La arquitectura ARM tiene una organización de registros de 32 bits y una estructura de banco de registros. El banco de registros incluye 16 registros de propósito general, 1 registro de estado de programa y varios registros especiales para interrupciones y manejo de excepciones.</li>
+                                <li><b>MIPS:</b> La arquitectura MIPS tiene una organización de registros de 32 bits y utiliza una combinación de registros de propósito general y registros de coprocesador. Los registros de propósito general se dividen en 32 registros de 32 bits y se utilizan para operaciones aritméticas y lógicas. Los registros de coprocesador se utilizan para la comunicación entre la CPU y la unidad de coma flotante.</li>
+                                <li><b>IBM z/Architecture:</b> La arquitectura z/Architecture de IBM tiene una organización de registros de 64 bits y utiliza un conjunto de registros de propósito general y registros de control y estado. Los registros de propósito general se utilizan para operaciones aritméticas y lógicas, mientras que los registros de control y estado se utilizan para el manejo de excepciones y el control de la CPU.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="cicloinstruccion">
+                    <h3>Ciclo de instrucciones</h3>
+                    <p class="content">El ciclo de instrucciones es el proceso que sigue la CPU para ejecutar las instrucciones que le son enviadas. Este proceso se divide en varias etapas, que incluyen buscar la instrucción, decodificarla, ejecutarla y almacenar los resultados. <br>
+                        El ciclo de instrucciones comienza cuando se carga la instrucción desde la memoria en el registro de instrucción de la CPU. A continuación, se decodifica la instrucción para identificar la operación que se debe realizar y los operandos necesarios.
+                        Luego, se ejecuta la operación, que puede implicar la transferencia de datos entre registros, la realización de operaciones aritméticas o lógicas, o la realización de operaciones de entrada/salida. Una vez completada la operación, los resultados se almacenan en un registro o en la memoria. <br>
+                        Después de completar una instrucción, la CPU vuelve a la etapa de búsqueda y carga la siguiente instrucción. Este proceso se repite hasta que se completa el programa o se produce una interrupción. El ciclo de instrucciones es fundamental para el funcionamiento de la CPU y es uno de los principales factores que determinan su rendimiento.
+                    </p>
+                    <div id="tab-cicloInstruccion">
+                        <ul class="index red">
+                            <li><a href="#f-d-e">Ciclo fetch-decode-execute</a></li>
+                            <li><a href="#segmIns">Segmentacion de instrucciones</a></li>
+                            <li><a href="#conjIns">Conjunto de instrucciones</a></li>
+                            <li><a href="#modDirForm">Modos de direccionamiento y formatos</a></li>
+                        </ul>
+                        <div id="f-d-e">
+                            <h3>Ciclo Fetch-Decode-Execute</h3>
+                            <p class="content">
+                                El ciclo fetch-decode-execute es un proceso que describe cómo una CPU ejecuta las instrucciones almacenadas en la memoria. El proceso comienza con la etapa de "fetch", en la que la CPU busca la próxima instrucción en la memoria y la carga en un registro interno. Luego, en la etapa "decode", la CPU decodifica la instrucción y determina qué operación se debe realizar. Finalmente, en la etapa "execute", la CPU lleva a cabo la operación y actualiza los registros y la memoria según sea necesario. Este ciclo se repite continuamente mientras la CPU está en funcionamiento, lo que permite la ejecución de programas y la realización de tareas complejas.
+                            </p>
+                            <img src="media/imgs/fetchdecode.webp" alt="" class="contentImgs">
+                        </div>
+                        <div id="segmIns">
+                            <h3>Segmentacion de instrucciones</h3>
+                            <p class="content">
+                                La segmentación de instrucciones es una técnica utilizada en arquitecturas de computadoras para mejorar el rendimiento de la CPU al permitir que varias instrucciones se ejecuten simultáneamente. Esta técnica divide el proceso de ejecución de instrucciones en diferentes etapas, donde cada etapa se ejecuta en un ciclo de reloj separado. Las etapas comunes incluyen la búsqueda de instrucciones, la decodificación de instrucciones, la ejecución de instrucciones y el acceso a memoria.
+                                La segmentación de instrucciones permite que varias instrucciones se ejecuten simultáneamente, lo que reduce el tiempo total de ejecución del programa. Además, también permite que se puedan reordenar y ejecutar instrucciones de manera más eficiente, lo que a su vez puede mejorar aún más el rendimiento de la CPU.
+                                Sin embargo, la segmentación de instrucciones también puede presentar algunos desafíos, como la dependencia de datos y el control de flujo, que pueden retrasar la ejecución de instrucciones y reducir el rendimiento. Además, la segmentación también puede aumentar la complejidad del diseño de la CPU y el consumo de energía.
+                            </p>
+                        </div>
+                        <div id="conjIns">
+                            <h3>Conjunto de instrucciones: Caracteristicas y funciones</h3>
+                            <p class="content">
+                                El conjunto de instrucciones de una arquitectura de computadoras es el conjunto de operaciones que la CPU puede ejecutar. Cada conjunto de instrucciones es único y varía de una arquitectura a otra.
+                                Las características y funciones del conjunto de instrucciones pueden variar significativamente según la arquitectura. <br> Sin embargo, en general, las funciones del conjunto de instrucciones pueden incluir:
+                            </p>
+                            <ul class="listContent">
+                                <li><b>Operaciones aritméticas:</b> como sumar, restar, multiplicar y dividir números.</li>
+                                <li><b>Operaciones lógicas:</b> como comparar dos valores, probar si un bit está establecido o borrar un bit.</li>
+                                <li><b>Operaciones de transferencia de datos:</b> como mover datos de una ubicación a otra, copiar datos de un lugar a otro o intercambiar valores entre registros.</li>
+                                <li><b>Operaciones de control de flujo:</b> como saltar a una dirección de memoria específica, llamar a una subrutina o volver de una subrutina.</li>
+                            </ul>
+                            <p class="content">Además de estas funciones básicas, los conjuntos de instrucciones pueden incluir características adicionales, como:</p>
+                            <ul class="listContent">
+                                <li><b>Operaciones de coma flotante:</b> para realizar cálculos de precisión decimal.</li>
+                                <li><b>Instrucciones SIMD (Single Instruction, Multiple Data):</b> para procesar múltiples elementos de datos a la vez.</li>
+                                <li><b>Instrucciones de gestión de memoria:</b> para leer o escribir en la memoria del sistema.</li>
+                                <li><b>Instrucciones de manejo de excepciones:</b> para detectar y manejar errores o eventos inesperados.</li>
+                            </ul>
+                        </div>
+                        <div id="modDirForm">
+                            <h3>Modos de direccionamiento y formatos</h3>
+                            <p class="content">
+                                Los modos de direccionamiento se refieren a la forma en que se especifica la dirección de memoria para acceder a los datos o instrucciones en una arquitectura de CPU. Los formatos de instrucción se refieren a la forma en que se codifican las instrucciones para que la CPU las pueda interpretar y ejecutar. <br> 
+                                <br>Algunos modos de direccionamiento y formatos comunes:
+                                <b>Modos de direccionamiento:</b>
+                            </p>
+                            <ul class="listContent">
+                              <li><b>Direccionamiento inmediato:</b> la dirección del operando se especifica en la propia instrucción.</li>
+                              <li><b>Direccionamiento directo:</b> la dirección del operando se especifica directamente en la instrucción.</li>
+                              <li><b>Direccionamiento indirecto:</b> la dirección del operando se almacena en un registro o memoria, y se accede a ella mediante el registro o memoria.</li>
+                              <li><b>Direccionamiento indexado:</b> la dirección del operando se calcula sumando un desplazamiento a un registro o valor de memoria.</li>
+                              <li><b>Direccionamiento de registro:</b> el operando se encuentra en un registro específico.</li>
+                              <li><b>Direccionamiento relativo:</b> la dirección del operando se especifica como un desplazamiento relativo a la dirección actual de la instrucción.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </main>
+    
+    </body>
 </html>

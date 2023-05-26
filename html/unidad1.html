@@ -5,8 +5,406 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unidad1</title>
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/estilosUnidad.css">
 </head>
 <body>
-    
+    <header class="hero" id="inicio">
+        <nav class="nav container">
+            <div class="nav_logo">
+                <h2 class="nav_title">Arquitectura de Computadoras</h2>
+            </div>
+            <ul class="nav__link nav__link--menu">
+                <li class="nav__items">
+                    <a href="/index.html" class="nav__links">Inicio</a>
+                </li>
+                <li class="nav__items">
+                    <a href="/index.html" class="nav__links">Unidades</a>
+                </li>
+                <li class="nav__items">
+                    <a href="/index.html" class="nav__links">Practicas</a>
+                </li>
+                <li class="nav__items">
+                    <a href="#social" class="nav__links">Contacto</a>
+                </li>
+
+                <img src="/images/close.svg" alt="Cerrar" class="nav__close">
+            </ul>
+
+            <div class="nav__menu">
+                <img src="/images/menu.svg" alt="menu" class="nav__img">
+            </div>
+        </nav>
+        <section class="hero__container container">
+            <h1 class="hero__title">Unidad 1</h1>
+            <p class="hero__paragraph">
+                Arquitecturas de computo
+            </p>
+        </section>
+    </header>
+
+    <main>
+        <p><span class="temario">&nbsp;</span></p>
+           <h2>Arquitectura de computo</h2>
+            <div id="tabs">
+                <ul class="mainIndex">
+                    <li><a href="#tabs-1">Modelo de arquitectura de computo</a></li>
+                    <li><a href="#tabs-2">Analisis de los componentes</a></li>
+                </ul>
+                <br>
+                <div id="tabs-1">
+                    <div id="tab-tabs">
+                        <ul class="index red">
+                            <li><a href="#tab-tab1">Clasicas</a></li>
+                            <li><a href="#tab-tab2" >Segmentadas</a></li>
+                            <li><a href="#tab-tab3" >Multiprocesador</a></li>
+                        </ul>
+                        <div id="tab-tab1">
+                            <h2>Clasicas</h2>
+                            <p class="content">
+                                En el campo de la informática, existen tres modelos de arquitectura clásica que se han utilizado y evolucionado a lo largo de la historia:
+                            </p>
+                            <dl>
+                                <dt>Arquitectura de von Neumann</dt>
+                                <dd>
+                                    desarrollada por John von Neumann en la década de 1940, es el modelo más utilizado en la actualidad. Se caracteriza por tener una memoria que almacena tanto datos como instrucciones, y una unidad central de procesamiento (CPU) que ejecuta las instrucciones almacenadas en la memoria.<br>
+                                    <img src="media/imgs/Arquitecturaneumann.jpg" alt="" class="contentImgs">
+                                </dd>
+                                <dt>Arquitectura Harvard</dt>
+                                <dd>
+                                    desarrollada en la década de 1930, separa la memoria en dos bloques distintos para almacenar datos y programas, lo que permite un acceso más rápido a los datos. Sin embargo, es menos flexible que la arquitectura de von Neumann.
+                                    <img src="media/imgs/image001.webp" alt="" class="contentImgs">
+                                </dd>
+                                <dt>Arquitectura RISC</dt>
+                                <dd>
+                                    se desarrolló en la década de 1980 para mejorar el rendimiento de las CPU. Se caracteriza por tener un conjunto reducido de instrucciones simples, lo que aumenta la velocidad de ejecución de las instrucciones y reduce la complejidad del diseño de la CPU.
+                                    <img src="media/imgs/ARQUITECTURA-DE-PROCESADOR-SOC-TIPO-RISC-TOMADO-DE-1.png" alt="" class="contentImgs">
+                                </dd>
+                            </dl>
+                        </div>
+                        <div id="tab-tab2">
+                            <h2>Segmentadas</h2>
+                            <p class="content">En el ámbito de la informática, las arquitecturas segmentadas son una forma de mejorar el rendimiento de las CPU, dividiendo el proceso de ejecución de instrucciones en segmentos más pequeños y especializados. Algunos modelos de arquitecturas segmentadas son:</p>
+                            <dl>
+                                <dt>Arquitectura pipelining</dt>
+                                <dd> es una técnica que divide el proceso de ejecución de instrucciones en una serie de etapas o segmentos, de tal forma que cada etapa puede trabajar en una instrucción diferente al mismo tiempo. Esto mejora el rendimiento de la CPU al permitir la ejecución simultánea de varias instrucciones.
+                                    <img src="media/imgs/1200px-Pipeline,_4_stage_with_bubble.svg.png" alt="" class="contentImgs">
+                                </dd>
+                                <dt>Arquitectura superescalar</dt>
+                                <dd>es una técnica que permite que una CPU ejecute múltiples instrucciones al mismo tiempo, en lugar de esperar a que se complete una antes de empezar con la siguiente. Esto se logra mediante la inclusión de múltiples unidades funcionales dentro de la CPU, cada una de las cuales puede ejecutar una instrucción diferente.
+                                    <img src="media/imgs/superescalar.png" alt="" class="contentImgs">
+                                </dd>
+                                <dt>Arquitectura VLIW</dt>
+                                <dd>es una técnica que permite que una CPU ejecute múltiples instrucciones en paralelo, agrupando varias instrucciones en una sola palabra de instrucción. Cada palabra de instrucción contiene varias instrucciones que se ejecutan simultáneamente en unidades funcionales separadas dentro de la CPU.
+                                    <img src="media/imgs/vliw.png" alt="" class="contentImgs">
+                                </dd>
+                            </dl>
+                        </div>
+                        <div id="tab-tab3">
+                            <h2>De multiprcesador</h2>
+                            <dl>
+                                <dt>Simetrica multiprocesador (SMP)</dt>
+                                <dd>es una arquitectura en la que dos o más procesadores idénticos comparten la misma memoria y dispositivos de entrada/salida. En un sistema SMP, cada procesador puede ejecutar cualquier tarea disponible en el sistema.
+                                    <img src="media/imgs/smpo.gif" alt="" class="contentImgs">
+                                </dd>
+                                <dt>Asimetrica Multiprocesador</dt>
+                                <dd>en un sistema ASMP, los procesadores tienen diferentes funciones y responsabilidades. Por ejemplo, puede haber un procesador dedicado a la gestión del sistema operativo, mientras que otros procesadores se encargan de tareas específicas.
+                                    <img src="media/imgs/asimetrico.jpg" alt="" class="contentImgs">
+                                </dd>
+                                <dt>Multiprocesador no uniforma (NUMA)</dt>
+                                <dd>en un sistema NUMA, los procesadores tienen acceso a diferentes bancos de memoria y a diferentes dispositivos de entrada/salida. Esta arquitectura se utiliza en sistemas de alta escalabilidad para mejorar el rendimiento y reducir la latencia de la memoria.
+                                    <img src="media/imgs/numa.webp" alt="" class="contentImgs">
+                                </dd>
+                                <dt>Cluster de computadoras</dt>
+                                <dd> es una arquitectura de multiprocesador distribuida, en la que un grupo de computadoras independientes se conectan a través de una red de alta velocidad para trabajar en tareas comunes. Cada computadora en el cluster puede tener su propio sistema operativo y recursos de hardware dedicados.
+                                    <img src="media/imgs/cluster.jpg" alt="" class="contentImgs">
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <div id="tabs-2">
+                    <div id="tab-tabs2">
+                        <ul class="index red">
+                            <li><a href="#tab-cpu">CPU</a></li>
+                            <li><a href="#tab-memoria">Memoria</a></li>
+                            <li><a href="#tab-ES">Manejo E/S</a></li>
+                            <li><a href="#tab-buses">Buses</a></li>
+                            <li><a href="#tab-interrupciones">Interupcuiones</a></li>
+                        </ul>
+                        <div id="tab-cpu">
+                            <h2>CPU</h2>
+                            <p class="content">La CPU (Central Processing Unit) o Unidad Central de Procesamiento, es el componente principal de un ordenador o computadora que se encarga de realizar las operaciones y cálculos necesarios para ejecutar programas y procesar datos. También se conoce como microprocesador o procesador.
+                                La CPU está compuesta por una serie de circuitos integrados, incluyendo la unidad de control, la unidad aritmético-lógica, la memoria caché y el bus de datos. La unidad de control es la encargada de interpretar y ejecutar las instrucciones de los programas, mientras que la unidad aritmético-lógica realiza las operaciones matemáticas y lógicas necesarias.
+                                El procesador se comunica con los demás componentes del sistema a través de los buses de datos y de control, y se conecta a la placa madre o motherboard a través de un zócalo. La velocidad de procesamiento de una CPU se mide en MHz (megahercios) o GHz (gigahercios), y está determinada por la frecuencia del reloj interno del procesador.</p>
+                            <div id="tab-tab-tabs2">
+                                <ul class="index blue">
+                                    <li><a href="#tab-arq">Arquitecturas</a></li>
+                                    <li><a href="#tab-tipo">Tipos de cpu</a></li>
+                                    <li><a href="#tab-carac">Caracteristicas</a></li>
+                                </ul>
+                                <div id="tab-arq">
+                                    <dl>
+                                        <dt>Arquitecturas</dt>
+                                        <dd>La arquitectura de una CPU (Central Processing Unit) se refiere a la estructura interna y diseño de sus componentes que permiten la ejecución de instrucciones y procesamiento de datos. Algunas de las arquitecturas de CPU más comunes son:
+                                            <ul class="listContent">
+                                                <li><b class="content">Arquitectura CISC: </b>
+                                                    <p class="content">esta arquitectura utiliza un conjunto complejo de instrucciones, que pueden realizar varias operaciones a la vez, lo que la hace eficiente en la ejecución de programas complejos. Las CPUs con esta arquitectura suelen tener una alta densidad de transistores y altas velocidades de reloj.</p>
+                                                     <img src="media/imgs/cisc.png" alt="" class="contentImgs">   
+                                                </li>
+                                                <li>
+                                                    <b class="content">Arquitectura RISC</b>
+                                                    <p class="content">esta arquitectura utiliza un conjunto reducido de instrucciones simples, lo que la hace más eficiente en la ejecución de tareas sencillas y repetitivas. Las CPUs con esta arquitectura suelen tener menor densidad de transistores y menor consumo energético, pero una velocidad de reloj más alta.</p>
+                                                    <img src="media/imgs/risc.jpg" alt="" class="contentImgs">
+                                                </li>
+                                                <li>
+                                                    <b class="content">Arquitectura VLIW</b>
+                                                    <p class="content">esta arquitectura combina múltiples instrucciones en una única palabra de instrucción, lo que permite una ejecución más rápida de operaciones paralelas y una mayor eficiencia de los recursos de la CPU.</p>
+                                                    <img src="media/imgs/vliw.png" alt="" class="contentImgs">
+                                                </li>
+                                                <li>
+                                                    <b class="content">Arquitectura SIMD</b>
+                                                    <p class="content">esta arquitectura utiliza una única instrucción para procesar múltiples datos al mismo tiempo, lo que la hace eficiente en aplicaciones de procesamiento de imágenes y video.</p>
+                                                    <img src="media/imgs/simd.png" alt="" class="contentImgs">
+                                                </li>
+                                                <li>
+                                                    <b class="content">Arquitectura MIMD</b>
+                                                    <p class="content">esta arquitectura permite la ejecución de múltiples instrucciones en múltiples conjuntos de datos, lo que la hace eficiente en aplicaciones de procesamiento en paralelo, como la computación distribuida y la supercomputación.</p>
+                                                    <img src="media/imgs/MIMD.svg.png" alt="" class="contentImgs">
+                                                </li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div id="tab-tipo">
+                                    <dl>
+                                        <dt>Tipos de CPU</dt>
+                                        <dd>Existen varios tipos de CPU (Central Processing Unit) según su diseño, velocidad de reloj y la cantidad de núcleos que poseen. Algunos de los tipos de CPU más comunes son:
+                                            <ul class="listContent">
+                                                <li>
+                                                    <b>CPU de un solo nucleo:</b>
+                                                    <p>es un procesador que contiene un solo núcleo y es capaz de procesar una instrucción a la vez. Es el tipo de CPU más común en las computadoras personales y portátiles.</p>
+                                                    <img src="media/imgs/mononucleo.webp" alt="" class="contentImgs">
+                                                </li>
+                                                <li>
+                                                    <b>CPU multinucleo:</b>
+                                                    <p>es un procesador que contiene dos o más núcleos, lo que permite procesar varias instrucciones simultáneamente. Los procesadores de cuatro núcleos son los más comunes en la actualidad, aunque también existen procesadores de seis, ocho y hasta dieciséis núcleos.</p>
+                                                    <img src="media/imgs/multinucleo.webp" alt="" class="contentImgs">
+                                                </li>
+                                                <li>
+                                                    <b>CPU arquitectura ARM:</b>
+                                                    <p>es una arquitectura RISC diseñada específicamente para dispositivos móviles y sistemas embebidos. Los procesadores ARM tienen una alta eficiencia energética y se utilizan en smartphones, tablets y otros dispositivos portátiles.</p>
+                                                    <img src="media/imgs/arm.webp" alt="" class="contentImgs">
+                                                </li>
+                                                <li><b>CPU arquitectura x86</b>
+                                                    <p> es una arquitectura CISC utilizada en las computadoras personales y portátiles con procesadores de Intel y AMD. Los procesadores x86 son capaces de ejecutar una amplia variedad de programas y sistemas operativos.</p>
+                                                    <img src="media/imgs/x86.jpg" alt="" class="contentImgs">
+                                                </li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div id="tab-carac">
+                                    <dl>
+                                        <dt>Caracteristicas</dt>
+                                        <dd>
+                                            El CPU (Central Processing Unit) es el cerebro de la computadora y es responsable de procesar las instrucciones y datos que recibe de los programas y dispositivos externos. Algunas de las características de un CPU son:
+                                            <ul class="listContent">
+                                                <li>
+                                                    <b>Velocidad de reloj</b>
+                                                    <p>se refiere a la velocidad a la que el CPU ejecuta las instrucciones, medida en GHz (Gigahertz). Cuanto mayor sea la velocidad de reloj, más rápido será el procesador.</p>
+                                                </li>
+                                                <li>
+                                                    <b>Numero de nucleos</b>
+                                                    <p>se refiere a la cantidad de núcleos que tiene el CPU. Los procesadores de varios núcleos pueden realizar varias tareas al mismo tiempo, lo que los hace más eficientes.</p>
+                                                </li>
+                                                <li>
+                                                    <b>Arquitectura</b>
+                                                    <p>se refiere al diseño interno del CPU y las instrucciones que utiliza para procesar los datos. Las arquitecturas más comunes son CISC y RISC.</p>
+                                                </li>
+                                                <li>
+                                                    <b>Cache</b>
+                                                    <p> es una memoria de acceso rápido que se utiliza para almacenar temporalmente datos e instrucciones que el CPU utiliza con frecuencia. Un mayor tamaño de caché puede mejorar el rendimiento del CPU.</p>
+                                                </li>
+                                                <li>
+                                                    <b>Consumo de energia</b>
+                                                    <p>se refiere a la cantidad de energía que consume el CPU para realizar su trabajo. Un menor consumo de energía puede prolongar la duración de la batería en dispositivos portátiles.</p>
+                                                </li>
+                                                <li>
+                                                    <b>Tecnologia de fabricacion</b>
+                                                    <p> se refiere a la tecnología utilizada para fabricar el CPU, medida en nanómetros (nm). Cuanto menor sea el tamaño de fabricación, más transistores pueden ser colocados en el CPU, lo que puede mejorar su rendimiento.</p>
+                                                </li>
+                                                <li>
+                                                    <b>Compatibilidad</b>
+                                                    <p> se refiere a la capacidad del CPU para ejecutar diferentes sistemas operativos y software. Los procesadores x86 son compatibles con la mayoría de los sistemas operativos y programas de software.</p>
+                                                </li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-memoria">
+                            <h2>Memoria</h2>
+                            <p class="content">La memoria en computación se refiere a la capacidad de almacenamiento de datos y programas en un dispositivo electrónico, como una computadora. Es esencial para el funcionamiento de cualquier sistema informático, ya que permite a la computadora acceder y utilizar la información que necesita para llevar a cabo tareas específicas.</p>
+                            <div id="memoriaIndex">
+                                <ul class="index blue">
+                                    <li><a href="#memoriaConcepto">Conceptos basicos del manejo de memoria</a></li>
+                                    <li><a href="#memoriaPrincial">Memoria principal conductora</a></li>
+                                    <li><a href="#memoriaCache">Memoria cache</a></li>
+                                </ul>
+                                <div id="memoriaConcepto" class="content">
+                                    <dl>
+                                        <dt>Conceptos basicos del manejo de memoria</dt>
+                                        <dd>El manejo de memoria en computación es un conjunto de técnicas y estrategias utilizadas por el sistema operativo para administrar la memoria de la computadora. A continuación, se describen algunos conceptos básicos del manejo de memoria:
+                                            <ul class="listContent">
+                                                <li><b>Memoria física:</b>
+                                                    <br>es la memoria real instalada en la computadora, como la RAM.</li>
+                                                <li><b>Memoria virtual:</b>
+                                                    <br>es una extensión de la memoria física que utiliza el disco duro para almacenar datos temporales cuando no hay suficiente memoria RAM disponible. El sistema operativo utiliza técnicas de intercambio de memoria para transferir datos entre la RAM y el disco duro, lo que permite que la computadora tenga acceso a más memoria de la que tiene instalada físicamente.</li>
+                                                <li><b>Administración de memoria:</b>
+                                                    <br>es el proceso de asignar y liberar memoria a las aplicaciones que se están ejecutando. El sistema operativo utiliza algoritmos de administración de memoria para garantizar que cada aplicación tenga acceso a la cantidad necesaria de memoria para su correcto funcionamiento.</li>
+                                                <li><b>Fragmentación de memoria:</b>
+                                                    <br>ocurre cuando la memoria libre disponible está dividida en pequeñas secciones no contiguas. Esto puede impedir que se asignen grandes bloques de memoria a las aplicaciones que los necesitan, lo que puede disminuir el rendimiento general del sistema.</li>
+                                                <li><b>Memoria compartida:</b>
+                                                    <br>se utiliza en sistemas multiprocesador y permite que varios procesos compartan el mismo espacio de memoria. Esto puede mejorar el rendimiento y reducir la necesidad de duplicar datos en diferentes procesos.</li>
+                                                <li><b>Fuga de memoria:</b>
+                                                    <br>ocurre cuando una aplicación no libera la memoria que ya no está utilizando. Con el tiempo, esto puede agotar la memoria disponible y causar que el sistema se vuelva inestable o se bloquee.</li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div id="memoriaPrincial" class="content">
+                                    <h3>Memoria Principal semiconductora</h3>
+                                    <p class="content">La memoria principal semiconductora es un tipo de memoria de acceso aleatorio (RAM) que se utiliza en la mayoría de las computadoras modernas. Como su nombre indica, utiliza materiales semiconductores (como el silicio) para almacenar y acceder a los datos.
+                                        La memoria principal semiconductora se divide en dos tipos principales: memoria estática (SRAM) y memoria dinámica (DRAM). La SRAM es más rápida y cara, y se utiliza principalmente en cachés de nivel 1 y 2. La DRAM es más lenta y económica, y se utiliza en la memoria principal de la mayoría de las computadoras.
+                                        La memoria principal semiconductora es volátil, lo que significa que los datos almacenados en ella se pierden cuando se apaga la computadora o se pierde la alimentación eléctrica. Por lo tanto, se requiere de una fuente de energía constante para mantener los datos en la memoria.
+                                        La memoria principal semiconductora es una parte crítica del sistema de una computadora, ya que afecta directamente el rendimiento. Cuanta más memoria RAM tenga una computadora, más programas podrá ejecutar al mismo tiempo y más rápido podrá trabajar con ellos. Sin embargo, si una computadora tiene demasiados programas abiertos o si los programas utilizan mucha memoria, la memoria RAM puede llenarse y hacer que el sistema se vuelva lento o incluso se bloquee. Por lo tanto, es importante tener suficiente memoria RAM para las necesidades de cada usuario.</p>
+                                        <img src="media/imgs/ram.jpg" alt="" class="contentImgs">
+                                </div>
+                                <div id="memoriaCache" class="content">
+                                    <h3>Memoria cache</h3>
+                                    <p class=content>La memoria caché es una memoria de alta velocidad y muy pequeña que se encuentra en la CPU (unidad central de procesamiento) de una computadora. Su objetivo principal es mejorar el rendimiento de la computadora mediante el almacenamiento temporal de datos que se utilizan con frecuencia.
+                                        La memoria caché se divide en varios niveles, siendo el nivel 1 (L1) el más rápido y cercano a la CPU y el nivel 3 (L3) el más lento y alejado. Cada nivel tiene una cantidad de memoria caché diferente, y los datos que se almacenan en ella son los que la CPU predice que se utilizarán a continuación.
+                                        Cuando la CPU necesita acceder a los datos almacenados en la memoria principal, primero busca en la memoria caché para ver si los datos ya se encuentran allí. Si los datos están en la memoria caché, la CPU puede acceder a ellos más rápido que si tuviera que buscarlos en la memoria principal. Si los datos no están en la memoria caché, se buscan en la memoria principal y se copian a la memoria caché para un acceso más rápido en el futuro.
+                                        La memoria caché es una parte importante del rendimiento de una computadora moderna, ya que permite una mayor eficiencia en la realización de tareas y una reducción en el tiempo de espera. La cantidad y velocidad de la memoria caché varía según el tipo de procesador y la computadora.
+                                    </p>
+                                    <img src="media/imgs/cache.jpg" alt="" class="contentImgs">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-ES">
+                            <h2>Manejo de entrada/salida</h2>
+                            <p class="content">El manejo de entrada/salida (E/S) se refiere a la forma en que un programa interactúa con los dispositivos de entrada y salida de un sistema informático. La entrada se refiere a cualquier información que el programa recibe, mientras que la salida se refiere a cualquier información que el programa produce.</p>
+                            <div id="tab-ES-inner">
+                                <ul id="indexEs" class="index blue">
+                                    <li><a href="#modES">Modulos de entrada/salida</a></li>
+                                    <li><a href="#ESprog">Entrada/salida programada</a></li>
+                                    <li><a href="#ACCDIRMEM">Acceso directo a memoria</a></li>
+                                    <li><a href="#CANPRES">Canales y procesadores de entrada/salida</a></li>
+                                </ul>
+                                <div id="modES">
+                                   <h3>Modulos de entrada/salida</h3>
+                                   <p class="content">En la arquitectura de computadoras, los módulos de entrada/salida son componentes hardware que se utilizan para controlar y coordinar el flujo de datos entre la CPU y los dispositivos de entrada/salida. Estos módulos se encuentran en la interfaz de E/S, que es el punto de conexión entre la CPU y los dispositivos externos. <br>
+                                   Algunos de los módulos de E/S más comunes en la arquitectura de computadoras son:
+                                   </p>
+                                   <ul class="listContent">
+                                        <li><b>Controlador de disco:</b> es un módulo de E/S que se utiliza para controlar el acceso a los dispositivos de almacenamiento de datos, como los discos duros y las unidades flash.</li>
+                                        <li><b>Controlador de red:</b> es un módulo de E/S que se utiliza para controlar el acceso a la red y manejar la transmisión y recepción de datos a través de los dispositivos de red, como los adaptadores de red y los routers.</li>
+                                        <li><b>Controlador de pantalla:</b> es un módulo de E/S que se utiliza para controlar la salida de gráficos y texto a la pantalla.</li>
+                                        <li><b>Controlador de teclado y mouse:</b> es un módulo de E/S que se utiliza para controlar la entrada de datos desde el teclado y el mouse.</li>
+                                        <li><b>Controlador de puerto serie:</b> es un módulo de E/S que se utiliza para controlar la comunicación serie, como la comunicación entre una computadora y un dispositivo periférico a través de un puerto serie.</li>
+                                    </ul>
+                                </div>
+                                <div id="ESprog">
+                                    <h3>Entrada/salida programada</h3>
+                                    <p class="content">La E/S programada es una técnica de entrada/salida en la que el procesador realiza la transferencia de datos entre el dispositivo de E/S y la memoria principal. En este método, el procesador realiza una instrucción de entrada/salida que espera a que el dispositivo de E/S esté listo para enviar o recibir datos. Cuando el dispositivo de E/S está listo, se inicia la transferencia de datos y el procesador la realiza mediante una secuencia de operaciones de lectura o escritura de datos.
+                                        Este método puede ser ineficiente en comparación con otros métodos de E/S más avanzados, como la DMA (Acceso Directo a Memoria), ya que requiere que el procesador esté disponible y esperando a que el dispositivo de E/S complete su operación antes de que pueda continuar con otras tareas. Además, el procesador puede estar ocupado con tareas de E/S mientras podría estar realizando otros cálculos o procesos en paralelo.
+                                        Sin embargo, la E/S programada sigue siendo utilizada en sistemas de computadora simples o en dispositivos integrados donde la complejidad de la E/S no justifica la adopción de métodos más avanzados.
+                                    </p>
+                                </div>
+                                <div id="ACCDIRMEM">
+                                    <h3>Acceso directo a memoria</h3>
+                                    <p class="content">El Acceso Directo a Memoria (DMA, por sus siglas en inglés) es una técnica de entrada/salida en la que un dispositivo de E/S puede acceder directamente a la memoria principal del sistema, sin la intervención del procesador. En lugar de requerir que el procesador realice la transferencia de datos entre el dispositivo de E/S y la memoria, el DMA permite que el dispositivo de E/S acceda directamente a la memoria principal y realice la transferencia de datos sin interferir en las operaciones del procesador.
+                                        La DMA se utiliza comúnmente en dispositivos de alta velocidad, como tarjetas de red, tarjetas gráficas y controladores de almacenamiento, que necesitan transferir grandes cantidades de datos en poco tiempo. La técnica de DMA puede mejorar significativamente el rendimiento del sistema, ya que permite que el procesador se concentre en otras tareas mientras el dispositivo de E/S se encarga de la transferencia de datos.
+                                        En resumen, el DMA permite que los dispositivos de E/S realicen transferencias de datos más eficientes y rápidas al acceder directamente a la memoria principal del sistema, lo que reduce la carga en el procesador y mejora el rendimiento del sistema.
+                                    </p>
+                                </div>
+                                <div id="CANPRES">
+                                    <h3>Canales y procesadores de entrada/salida</h3>
+                                    <p class="content">Los canales y procesadores de entrada/salida son componentes importantes de los sistemas de E/S avanzados que permiten la transferencia eficiente de datos entre los dispositivos de E/S y la memoria principal del sistema.
+                                        Un canal de E/S es un controlador de hardware dedicado que se encarga de la transferencia de datos entre los dispositivos de E/S y la memoria principal del sistema. El canal de E/S puede funcionar en modo DMA (Acceso Directo a Memoria) o en modo programado, y puede manejar múltiples dispositivos de E/S de forma simultánea. Los canales de E/S son comúnmente utilizados en sistemas de alta velocidad, como servidores y supercomputadoras, donde la transferencia de datos es crítica y el procesamiento de E/S a través del procesador principal puede afectar el rendimiento del sistema.
+                                        Un procesador de E/S, por otro lado, es un microprocesador dedicado que se encarga de la gestión de múltiples canales de E/S y dispositivos de E/S. El procesador de E/S tiene una arquitectura propia y es capaz de realizar operaciones de E/S de manera independiente del procesador principal. Esto permite que el procesador de E/S se encargue de la transferencia de datos y la gestión de dispositivos de E/S, lo que libera al procesador principal para concentrarse en otras tareas y mejora el rendimiento del sistema.
+                                        En resumen, los canales y procesadores de E/S son componentes críticos en los sistemas de computación avanzados que permiten la transferencia eficiente de datos entre los dispositivos de E/S y la memoria principal. Estos componentes ayudan a mejorar el rendimiento del sistema y a reducir la carga del procesador principal al manejar la gestión y transferencia de datos de E/S de manera independiente.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-buses">
+                            <h3>Buses</h3>
+                            <div id="tab-buses-inner">
+                                <ul class="index blue">
+                                    <li><a href="#tipBuses">Tipos de buses</a></li>
+                                    <li><a href="#estBuses">Estructura de los buses</a></li>
+                                    <li><a href="#jerarBus">Jerarquia de buses</a></li>
+                                </ul>
+                                <div id="tipBuses">
+                                    <h3>Tipos de buses</h3>
+                                    <p class="content">Un bus es un conjunto de cables, líneas de control y protocolos que conectan los diferentes componentes de un sistema informático para permitir la transferencia de datos entre ellos. Los buses son un componente esencial de la arquitectura de computadoras y se utilizan para conectar la CPU, la memoria, los dispositivos de E/S y otros componentes del sistema.
+                                        <br>Existen diferentes tipos de buses en la arquitectura de computadoras, algunos de los más comunes son:
+                                    </p>
+                                    <ul class="listContent">
+                                        <li><b>Bus de datos:</b> Es un conjunto de líneas que transportan los datos entre la CPU y la memoria. El ancho del bus de datos determina la cantidad de datos que se pueden transferir a la vez. Por ejemplo, un bus de datos de 64 bits puede transferir 8 bytes de datos a la vez.</li>
+                                        <li><b>Bus de direcciones:</b> Es un conjunto de líneas que transportan las direcciones de memoria desde la CPU hasta la memoria. El ancho del bus de direcciones determina la cantidad de memoria que se puede direccionar. Por ejemplo, un bus de direcciones de 32 bits puede direccionar hasta 4 GB de memoria.</li>
+                                        <li><b>Bus de control:</b> Es un conjunto de líneas que transportan señales de control entre la CPU y otros componentes del sistema, como dispositivos de E/S. Las señales de control incluyen señales de lectura y escritura, señales de interrupción, señales de sincronización y señales de control de bus.</li>
+                                        <li><b>Bus de E/S:</b> Es un conjunto de líneas que se utiliza para conectar los dispositivos de E/S a la CPU. El bus de E/S puede estar compuesto por varios buses diferentes, como el bus de datos, el bus de direcciones y el bus de control.</li>
+                                    </ul>
+                                    <div class="doubleImg">
+                                        <div class="imgWithText">
+                                            <img src="media/imgs/busFisico.jpg" alt="" class="contentImgs">
+                                            <p class="content">Cable de bus</p>
+                                        </div>
+                                        <div class="imgWithText">
+                                            <img src="media/imgs/busIntegrado.jpg" alt="" class="contentImgs">
+                                            <p class="content">Bus en una tarjeta madre</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="estBuses">
+                                    <h3>Estructura de los buses</h3>
+                                    <p class="content">La estructura de los buses en una arquitectura de computadoras puede variar según el diseño del sistema, pero generalmente consta de tres partes: la señalización, la transferencia de datos y el protocolo.
+                                        La señalización se refiere a cómo se transmiten las señales eléctricas a través del bus. Los buses pueden usar diferentes tipos de señalización, como señales unidireccionales, bidireccionales, serie, paralelas, entre otras.
+                                        La transferencia de datos se refiere a cómo se transfieren los datos a través del bus. Los buses pueden transferir datos de forma síncrona o asíncrona. En una transferencia síncrona, los datos se transfieren en intervalos regulares de tiempo, mientras que en una transferencia asíncrona, los datos se transfieren cuando el dispositivo receptor está listo para recibirlos.
+                                        El protocolo se refiere a las reglas que rigen cómo se lleva a cabo la comunicación a través del bus. El protocolo define cómo se realizan las transferencias de datos, cómo se gestionan las colisiones de datos y cómo se manejan las solicitudes de interrupción.
+                                        La combinación de estas tres partes define la estructura del bus y determina cómo se comunican los componentes de la computadora. Los buses pueden ser diseñados para ser compartidos por varios dispositivos o pueden ser dedicados a un dispositivo específico. También pueden ser de diferentes anchos, velocidad y capacidad de transferencia de datos.
+                                    </p>
+                                </div>
+                                <div id="jerarBus">
+                                    <h3>Jerarquia de buses</h3>
+                                    <p class="content">La jerarquía de buses se refiere a la organización y relación de los buses en un sistema informático. Hay varios niveles o capas de buses en un sistema, que se organizan en una jerarquía en función de su velocidad y capacidad de transferencia de datos.
+                                        <br>Los niveles de la jerarquía de buses son los siguientes:
+                                    </p>
+                                    <ul class="listContent">
+                                        <li><b>Bus interno de la CPU:</b> es el bus más rápido y se utiliza para la comunicación entre las distintas unidades de la CPU, como la unidad de control, la unidad aritmético-lógica y la memoria caché.</li>
+                                        <li><b>Bus de sistema:</b> es el bus principal que conecta la CPU con la memoria principal y los dispositivos de E/S. También se conoce como el bus frontal.</li>
+                                        <li><b>Bus de E/S:</b> es un bus secundario que se utiliza para la comunicación entre la CPU y los dispositivos de E/S.</li>
+                                        <li><b>Buses periféricos:</b> son buses que se utilizan para conectar dispositivos periféricos, como impresoras, discos duros externos, cámaras, etc. Estos buses pueden ser de diferentes tipos, como USB, FireWire, SATA, etc.</li>
+                                    </ul>
+                                </div>
+                             </div>
+                        </div>
+                        <div id="tab-interrupciones">
+                            <h3>Interrupciones</h3>
+                            <p class="content">En arquitectura de computadoras, una interrupción es una señal que indica a la CPU que detenga temporalmente la ejecución de un programa y atienda una tarea de mayor prioridad. Las interrupciones son una forma importante de manejar la entrada y salida de datos, así como de manejar eventos en tiempo real.
+                                Cuando se produce una interrupción, la CPU detiene temporalmente la ejecución del programa actual y guarda su estado actual en la pila. A continuación, la CPU salta a una rutina de servicio de interrupción (ISR, por sus siglas en inglés) que se encarga de atender la tarea de mayor prioridad. Después de completar la tarea, la CPU vuelve a la tarea que estaba realizando anteriormente, restaurando su estado a partir de la pila.
+                                Las interrupciones pueden ser generadas por dispositivos de E/S, como teclados, ratones y controladores de disco, para indicar que se ha completado una operación. También pueden ser generadas por la CPU para realizar tareas de mantenimiento, como el ajuste de relojes y la gestión de errores.
+                                Las interrupciones se clasifican en dos tipos: interrupciones de software y de hardware. Las interrupciones de software son generadas por el propio programa que se está ejecutando, mientras que las interrupciones de hardware son generadas por dispositivos externos.
+                                En resumen, las interrupciones son una forma importante de manejar la entrada y salida de datos, así como de manejar eventos en tiempo real en arquitectura de computadoras. Permiten a la CPU realizar múltiples tareas de manera eficiente y manejar dispositivos de E/S de manera efectiva.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </main>
 </body>
 </html>
